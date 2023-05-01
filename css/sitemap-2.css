@@ -1,0 +1,208 @@
+/* 데스크탑 버전 */
+@media screen and (min-width:1024px) {
+    h1{
+        width: 900px; 
+        margin: auto;
+        background: orange;
+        color: white;
+        letter-spacing: 10px;
+        padding: 10px;
+        text-align: center;
+        text-transform: capitalize;
+        border: 5px solid gold;
+        border-radius: 5px;
+        font-family: serif;
+        text-shadow: 1px 1px black;
+    }
+    section{
+        width: 900px;
+        margin: auto;
+    }
+    [class=box]{
+        float: left;
+        width: 250px;
+        margin: 10px;
+        padding: 10px;
+        line-height: 2;
+        height: 330px;
+        box-sizing: border-box;
+    }
+    [class=row]{
+        overflow: hidden;
+        margin: 10px 10px;
+        padding-left: 50px;
+    }
+    h2{
+        text-align: center;
+        border-bottom: 3px solid orange;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    ul>li{
+        text-indent: 35px;
+        position: relative;
+    }
+    ul>li::before{
+        content: '\1F95B';
+        position: absolute;
+        left: -25px; top: 0;
+    }
+    ul>li:hover{
+        background: lightgray;
+        cursor: pointer;
+        text-indent: 40px;
+        transition: 1s;
+    }
+    .box:hover{
+        transform: scale(1,1);
+        transition: 1s;
+    }
+    ul>li:hover::before{
+        content: '\1F34C';
+    }
+    .box{
+        overflow: visible;
+    }
+    .row:after{
+        content: ''; display: block; clear: both;
+    }        
+}
+
+/* 테블릿 버전 */
+@media (min-width:768px) and (max-width:1023px) {
+    h1{
+        width: 100%; 
+        margin: 20px auto;
+        background: orange;
+        color: white;
+        letter-spacing: 10px;
+        padding: 10px;
+        text-align: center;
+        text-transform: capitalize;
+        border: 5px solid gold;
+        border-radius: 5px;
+        font-family: serif;
+        text-shadow: 1px 1px black;
+    }
+    section{
+        width: 100%;
+        margin: auto;
+        position: relative;
+        height: 550px;
+    }
+    [class=box]{
+        position: absolute;
+        border: 3px solid gray;
+        width: 28%;
+        margin: 10px;
+        padding: 10px;
+        line-height: 2;
+        height: 330px;
+        box-sizing: border-box;
+        box-shadow: 3px 4px lightgray;
+    }
+    [class=row]{
+        margin: 10px 10px;
+        padding-left: 50px;
+    }
+    h2{
+        text-align: center;
+        border-bottom: 3px solid orange;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    ul>li{
+        text-indent: 35px;
+        position: relative;
+    }
+    ul>li::before{
+        content: '\1F95B';
+        position: absolute;
+        left: -25px; top: 0;
+    }
+    ul>li:hover{
+        background: lightgray;
+        cursor: pointer;
+        text-indent: 40px;
+        transition: 1s;
+    }
+    .box:hover{
+        transform: scale(1,1);
+        transition: 1s;
+    }
+    ul>li:hover::before{
+        content: '\1F34C';
+    }
+    .box{
+        overflow: visible;
+    }
+    .row:after{
+        content: ''; display: block; clear: both;
+    }   
+    section{height: 600px;}     
+    #a{background: lemonchiffon; left: 5%;}
+    #b{left: 35%; top: 0; background: lavenderblush;}
+    #c{left: 65%; top: 0; background: lavender;}
+    #d{left: 0%; top: 350px; background: lightcyan;}
+    #e{left: 30%; top: 350px; background: pink;}
+    #f{left: 60%; top: 350px; background: ivory;}
+    .box:hover{z-index: 1;}
+}
+
+/* 모바일 버전 */
+@media screen and (max-width:767px) {
+    h1{
+        width: 20px auto; 
+        background: orange;
+        color: white;
+        letter-spacing: 10px;
+        padding: 10px;
+        text-align: center;
+        text-transform: capitalize;
+        border: 5px solid gold;
+        border-radius: 5px;
+        font-family: serif;
+        text-shadow: 1px 1px black;
+    }
+    section{
+        margin: auto;
+    }
+    [class=box]{
+        border: 3px solid gray;
+        margin: 10px;
+        padding: 10px;
+        line-height: 2;
+        box-sizing: border-box;
+        box-shadow: 3px 4px lightgray;
+    }
+    [class=row]{
+        margin: 10px auto;
+    }
+    h2{
+        text-align: center;
+        border-bottom: 3px solid orange;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    ul>li{
+        text-indent: 25px;
+        position: relative;
+    }
+    ul>li::before{
+        content: '\1F95B';
+        position: absolute;
+        left: -25px; top: 0;
+    }
+    ul>li:hover{
+        background: lightgray;
+        cursor: pointer;
+        text-indent: 40px;
+        transition: 1s;
+    }
+    ul>li:hover::before{
+        content: '\1F34C';
+    }
+}
